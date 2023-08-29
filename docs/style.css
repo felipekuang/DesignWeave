@@ -4,7 +4,7 @@ body {
     background-color: #e0f2f1;
     margin: 0;
     }
-    .fixed-header{
+  .header{
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     padding-left: 15px;
@@ -15,25 +15,30 @@ body {
     top: 0;
     font-size: 15px;
   }
-    .fixed-footer {
+  .footer {
     background-color: #34495e;
     color: #ffffff;
     text-align: center;
     width: 100%;
     bottom: 0;
   }
-    .title {
+  .title {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.5;
     padding-left: 30px;
     color: #000000;
     text-align: left;
     font-size: 30px;
   }
-    .section {
-    padding: 20px;
+  .section {
+    width: 1400px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    text-indent: 20px;
+    line-height: 1.5;
+    padding: 0px;
+    /*color: black;*/
   }
-    .index {
+  .index {
     width: 85%;
     padding: 35px;
     margin: auto;
@@ -41,19 +46,3 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-/*
-    .index ul li a{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-  }
-    .index ul li::after{
-    content: '';
-    height: 3px;
-    width: 100%;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-*/
