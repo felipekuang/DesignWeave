@@ -48,5 +48,20 @@ img {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
+}
+.index a {
+  color: black; 
+  text-decoration: none; 
+}
+.index ul {
+  list-style: none; 
+  display: flex; 
+  margin: 0; 
+  padding: 0; 
+}
+.index li {
+  display: inline-block; 
+  margin-right: 30px; 
+  border-bottom: 2px solid black; 
+  padding-bottom: 5px;
+}
