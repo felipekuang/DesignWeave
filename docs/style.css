@@ -4,32 +4,28 @@ body {
     background-color: #e0f2f1;
     margin: 0;
     }
-   .fixed-header{
+    .fixed-header{
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5;
     padding-left: 15px;
     background-color: #32527c;
     color: #ffffff;
     text-align: left;
-    position: fixed;
     width: 100%;
     top: 0;
     font-size: 15px;
   }
-  .fixed-footer {
+    .fixed-footer {
     background-color: #34495e;
     color: #ffffff;
     text-align: center;
-    position: fixed;
     width: 100%;
     bottom: 0;
-    
   }
-  .section {
+    .section {
     padding: 20px;
-    /*color: black;*/
   }
-  .index {
+    .index {
     width: 85%;
     padding: 35px;
     margin: auto;
@@ -37,12 +33,12 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .index ul li a{
+    .index ul li a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
   }
-  .index ul li::after{
+    .index ul li::after{
     content: '';
     height: 3px;
     width: 100%;
