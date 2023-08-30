@@ -100,7 +100,7 @@
     display: inline-block; 
     margin-right: 30px; 
     border-bottom: 2px solid transparent;
-   padding-bottom: 5px;
+    padding-bottom: 5px;
   }
   .index li::before {
     content: "";
@@ -119,22 +119,23 @@
   }
   .slideInExample {
     width: 0;
-   overflow: hidden;
+    overflow: hidden;
     white-space: nowrap;
     transition: width 1s ease-in-out;
   }
   .slideInExample.show {
     width: 100%;
   }
-  #backToTopBtn {
+#backToTopBtn {
     display: none; 
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #32527c;
-    color: #ffffff;
+    background-color: #3498db; 
+    color: #ffffff; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none; 
   }
