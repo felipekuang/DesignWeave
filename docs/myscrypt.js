@@ -21,3 +21,20 @@ function smoothScroll(event) {
     });
 }
 
+var backToTopButton = document.getElementById("backToTopBtn");
+
+// Show or hide the button based on scroll position
+window.onscroll = function () {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+};
+
+// Add smooth scrolling behavior when the button is clicked
+backToTopButton.addEventListener("click", function () {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
