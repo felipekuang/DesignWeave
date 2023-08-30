@@ -23,7 +23,6 @@ function smoothScroll(event) {
 
 var backToTopButton = document.getElementById("backToTopBtn");
 
-// Show or hide the button based on scroll position
 window.onscroll = function () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     backToTopButton.style.display = "block";
@@ -32,9 +31,15 @@ window.onscroll = function () {
   }
 };
 
-// Add smooth scrolling behavior when the button is clicked
 backToTopButton.addEventListener("click", function () {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; 
+  scrollToTop();
 });
 
+function scrollToTop() {
+  var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  if (currentPosition > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    var decrement = Math.max(20, currentPosition / 20); 
+    window.scrollTo(0, currentPosition - decrement);
+  }
+}
