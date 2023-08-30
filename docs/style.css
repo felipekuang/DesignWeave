@@ -3,10 +3,11 @@
     color: black;
     background-color: #F5F5DC;
     margin: 0;
-  }
+    }
   img {
     object-fit: contain;
     text-align: center;
+    padding: 0px;
   }
   .header {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -69,7 +70,7 @@
     text-align: justify; 
     line-height: 2; 
     hyphens: auto; 
-  }
+}
   .index {
     width: 85%;
     padding: 25px;
@@ -126,7 +127,7 @@
   .slideInExample.show {
     width: 100%;
   }
-#backToTopBtn {
+  #backToTopBtn {
     display: none; 
     position: fixed;
     bottom: 20px;
