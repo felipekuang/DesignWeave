@@ -5,11 +5,8 @@
     margin: 0;
   }
   img {
-      object-fit: contain;
-      text-align: center;
-  }
-  img {
-    padding: 8px;
+    object-fit: contain;
+    text-align: center;
   }
   .header {
     font-family: Georgia, 'Times New Roman', Times, serif;
