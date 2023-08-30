@@ -34,7 +34,6 @@ window.onscroll = function () {
 backToTopButton.addEventListener("click", function () {
   scrollToTop();
 });
-
 function scrollToTop() {
   var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentPosition > 0) {
