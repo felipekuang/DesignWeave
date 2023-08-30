@@ -1,25 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const animatedElement = document.getElementById("animatedElement");
-    animatedElement.classList.add("show");
-});
-const indexLinks = document.querySelectorAll(".index a");
+  const animatedElement = document.getElementById("animatedElement");
+  animatedElement.classList.add("show");
 
-indexLinks.forEach(link => {
-    link.addEventListener("click", smoothScroll);
-});
+  const indexLinks = document.querySelectorAll(".index a");
 
-function smoothScroll(event) {
+  indexLinks.forEach(link => {
+    link.addEventListener("click", smoothScrollToSection);
+  });
+
+  function smoothScrollToSection(event) {
     event.preventDefault();
-    
+
     const targetId = this.getAttribute("href");
     const targetElement = document.querySelector(targetId);
     const offset = targetElement.getBoundingClientRect().top;
-    
+
     window.scrollTo({
-        top: offset + window.scrollY,
-        behavior: "smooth"
+      top: offset + window.scrollY,
+      behavior: "smooth"
     });
-}
+  }
+});
 
 var backToTopButton = document.getElementById("backToTopBtn");
 
@@ -34,6 +35,7 @@ window.onscroll = function () {
 backToTopButton.addEventListener("click", function () {
   scrollToTop();
 });
+
 function scrollToTop() {
   var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
   if (currentPosition > 0) {
