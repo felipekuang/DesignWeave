@@ -6,6 +6,26 @@
     <title>DesignWeave - Software de Personalização de Estampa de Camisetas</title>
     <link rel="stylesheet" href="style.css">
     <script src="myscript.js"></script>
+    <style>
+        /* Estilo para centralizar a div horizontalmente */
+        .centrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Isso ajuda a centralizar verticalmente também */
+        }
+
+        /* Estilo para a tabela */
+        table {
+            border-collapse: collapse;
+            width: 80%; /* Largura da tabela */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
   </head>
   <body>
     <div class="header" style="height: 60px;">
@@ -97,7 +117,7 @@
     </div>
     <div class="section" id="parts-interested">
       <h2>Partes interessadas</h2>
-      <div style="text-align: center;">
+      <div style="centrar">
         <table border="1">
           <tr>
               <th>Header 1</th>
