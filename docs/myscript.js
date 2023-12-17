@@ -67,3 +67,19 @@ modal.addEventListener("click", function(event) {
     modal.style.display = "none";
   }
 });
+
+var histUsuModal = document.getElementById("hist_usu_Modal");
+var histUsuImg = document.getElementById("hist_usu");
+var histUsuModalImg = document.getElementById("img02");
+
+histUsuImg.onclick = function() {
+  histUsuModal.style.display = "block";
+  histUsuModalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+histUsuModal.addEventListener("click", function(event) {
+  if (event.target === histUsuModal) {
+    histUsuModal.style.display = "none";
+  }
+});
