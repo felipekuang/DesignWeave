@@ -164,12 +164,12 @@
     margin: auto;
     display: block;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
   }
 
   #img02 {
       max-width: 1300px;
-      transform: scale(1.2); 
+      transform: scale(1.3); 
   }
   #caption {
     margin: auto;
