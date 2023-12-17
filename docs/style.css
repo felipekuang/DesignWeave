@@ -171,6 +171,11 @@
       max-width: 1200px;
       transform: scale(1.1); 
   }
+
+  #img03 {
+      max-width: 1200px;
+      transform: scale(1.1); 
+  }
   #caption {
     margin: auto;
     display: block;
@@ -204,10 +209,10 @@
     text-decoration: none;
     cursor: pointer;
   }
-  @media only screen and (max-width: 1100px){
+  @media only screen and (max-width: 1200px){
     #img02 {
-        max-width: 102%;
-        transform: scale(1.1);
+        max-width: 100%;
+        transform: scale(1);
     }
   }
 
@@ -217,3 +222,10 @@
   padding: 0px;
   }
   #hist_usu:hover {opacity: 0.7;}
+
+  #narrativas{
+  object-fit: contain;
+  text-align: center;
+  padding: 0px;
+  }
+  #narrativas:hover {opacity: 0.7;}
