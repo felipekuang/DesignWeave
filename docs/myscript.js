@@ -83,3 +83,19 @@ histUsuModal.addEventListener("click", function(event) {
     histUsuModal.style.display = "none";
   }
 });
+
+var narrativasModal = document.getElementById("Narrativa_Modal");
+var narrativasImg = document.getElementById("narrativas");
+var narrativasModalImg = document.getElementById("img03");
+
+narrativasImg.onclick = function() {
+  narrativasModal.style.display = "block";
+ narrativasModalImg.src = this.src;
+  narrativasText.innerHTML = this.alt;
+}
+
+narrativasModal.addEventListener("click", function(event) {
+  if (event.target === narrativasModal) {
+   narrativasModal.style.display = "none";
+  }
+});
