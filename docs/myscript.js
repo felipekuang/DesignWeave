@@ -84,7 +84,7 @@ histUsuModal.addEventListener("click", function(event) {
   }
 });
 
-var narrativasModal = document.getElementById("Narrativa_Modal");
+var narrativasModal = document.getElementById("narrativas_Modal");
 var narrativasImg = document.getElementById("narrativas");
 var narrativasModalImg = document.getElementById("img03");
 
