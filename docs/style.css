@@ -214,6 +214,10 @@
         max-width: 100%;
         transform: scale(1);
     }
+    #img03 {
+        max-width: 100%;
+        transform: scale(1.2); 
+    }
   }
 
   #hist_usu {
