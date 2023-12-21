@@ -5,263 +5,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DesignWeave - Software de Personalização de Estampa de Camisetas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <script src="myscript.js"></script>
-    <style>
-      .tabela {
-            display: inline-block;
-            align-items: center;
-            width: 100%;
-      }
-      /* Estilo para a tabela */
-      table {
-          border-collapse: collapse;
-          width: 100%; /* Largura da tabela */
-          margin: 0; /* Remove a margem padrão */
-          border-spacing: 0; /* Remove o espaçamento entre as células */
-      }
-      th, td {
-          border: 1px solid black;
-          padding: 8px;
-          text-align: center;
-      }
-    </style>
   </head>
   
-  <body>
-    <div class="header" style="height: 60px;">
-      <div class="logo1">
-        <img src="UFRJ.png" alt="Logo1" class="logo1">
+  <body style="overflow-x: hidden">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#page-top">Design Weave</a>
+          <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#sobre">Sobre</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#funcionalidade">Funcionalidade</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contato">Quem Somos</a></li>
+              </ul>
+          </div>
       </div>
-      <b><strong>Universidade Federal do Rio de Janeiro</strong><br>
-      <strong>Departamento de Engenharia Eletrônica e de Computação</strong></b>
+  </nav>
+
+  <!-- Masthead-->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <img class="mb-3" src="logo.png" alt="Logo" style="width: 75%; max-width: 500px">
+      <p
+        class="masthead-subheading font-weight-light mb-0"
+        style="font-size: 16px"
+      >
+        SOFTWARE DE PERSONALIZAÇÃO DE ESTAMPAS DE CAMISETAS
+      </p>
     </div>
-    <div class="slideInExample" id="animatedElement">
-      <div class="index">
-        <div class="logo">
-          <img src="logo.png" alt="Logo">
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" class="page-section mb-0">
+      <div class="container">
+          <!-- About Section Heading-->
+          <h2 class="page-section-heading text-center text-uppercase">SOBRE</h2>
+          <!-- Icon Divider-->
+          <div class="divider-custom mb-5">
+              <div class="divider-custom-line"></div>
+          </div>
+          <!-- About Section Content-->
+          <div class="row">
+              <div class="ms-auto">
+                <p class="lead" style="text-indent: 5%; text-align: justify">
+                  Apresentamos DesignWeave, uma solução de personalização de estampas para camisetas. Este projeto de software é uma resposta à crescente demanda por personalização na indústria de vestuário, proporcionando aos usuários uma plataforma versátil e avançada para criar estampas únicas em camisetas.
+                </p>
+                <p class="lead" style="text-indent: 5%; text-align: justify">
+                  O software busca equilibrar a conveniência das estampas pré-definidas com a liberdade criativa de estampas personalizadas, oferecendo aos usuários uma experiência única de design de moda. Ao fornecer uma ampla gama de estampas prontas para uso, abrange as necessidades daqueles que procuram opções rápidas e estilizadas. Além disso, o software capacita os indivíduos criativos a importar suas próprias criações, permitindo uma expressão verdadeiramente autêntica.
+                </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Funcionalidade -->
+  <section id="funcionalidade" class="page-section bg-primary text-white mb-0">
+      <div class="container">
+          <!-- About Section Heading-->
+          <h2 class="page-section-heading text-center text-uppercase text-white">FUNCIONALIDADE</h2>
+          <!-- Icon Divider-->
+          <div class="divider-custom mb-5 divider-light">
+              <div class="divider-custom-line"></div>
+          </div>
+          <!-- About Section Content-->
+          <div class="row">
+              <div class="ms-auto">
+                <p class="lead" style="text-indent: 5%; text-align: justify">
+                  A estrutura do projeto baseia-se na criação de uma interface de usuário intuitiva, que permitirá aos usuários explorar e selecionar entre uma ampla variedade de estampas pré-definidas ou importar suas próprias criações. A capacidade de observar em tempo real como as alterações na estampa afetam a aparência da peça de vestuário escolhida permite que os usuários experimentem diferentes variações e façam ajustes em busca do visual ideal.
+                </p>
+                <p class="lead" style="text-indent: 5%; text-align: justify">
+                  Ao concluir as customizações, os usuários podem visualizar a estampa aplicada à peça de vestuário escolhida. A interface oferece uma visão precisa de como a estampa se encaixa na peça, permitindo que os usuários avaliem o resultado antes de finalizar. Os designs personalizados podem ser salvos para futuras referências ou edições.
+                </p>
+                <p class="lead" style="text-indent: 5%; text-align: justify">
+                  A interface é projetada para ser amigável e convidativa, incentivando os usuários a explorar e experimentar. O feedback dos usuários é valorizado, e melhorias contínuas são implementadas com base nas opiniões para aprimorar ainda mais a experiência. A interação do usuário com a interface é centrada na criatividade, oferecendo aos usuários as ferramentas e a liberdade necessárias para criar designs de estampas de roupas verdadeiramente únicos e pessoais.
+                </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Valores -->
+  <section class="page-section mb-0">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">VALORES</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom mb-5">
+            <div class="divider-custom-line"></div>
         </div>
-        <ul>
-          <li><a href="#about">Sobre o Software</a></li>
-          <li><a href="#description">Funcionalidades</a></li>
-          <li><a href="#value">Valores</a></li>
-          <li><a href="#canvassection">Software Project Canvas</a></li>
-          <li><a href="#parts-interested">Partes Interessadas</a></li>
-          <li><a href="#hist_usu">Histórias dos Usuários</a></li>
-          <li><a href="#casos_uso">Casos de Uso</a></li>
-          <li><a href="#group-members">Quem Somos</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="title">
-      <p>Software de Personalização de Estampas de Camisetas</p>
-    </div>
-    <div class="section" id="about">
-      <h2>Sobre o Software</h2>
-      <p>Apresentamos DesignWeave, uma solução de personalização de estampas para camisetas. Este projeto de software é uma resposta 
-        à crescente demanda por personalização na indústria de vestuário, proporcionando aos usuários uma plataforma 
-        versátil e avançada para criar estampas únicas em camisetas.</p>
-      <p>O software busca equilibrar a conveniência das estampas pré-definidas com a liberdade criativa de estampas personalizadas, 
-        oferecendo aos usuários uma experiência única de design de moda. Ao fornecer uma ampla gama de estampas prontas para uso, 
-        abrange as necessidades daqueles que procuram opções rápidas e estilizadas. Além disso, o software capacita os indivíduos 
-        criativos a importar suas próprias criações, permitindo uma expressão verdadeiramente autêntica.
-      </p>
-      <div style="text-align: center;">
-        <img src="EstampasCamisas.png" alt="Estampas" width="800" height="600">
-      </div>
-    </div>
-    <div class="section" id="description">
-      <h2>Funcionalidades</h2>
-      <p>
-        A estrutura do projeto baseia-se na criação de uma interface de usuário intuitiva, que permitirá aos usuários 
-        explorar e selecionar entre uma ampla variedade de estampas pré-definidas ou importar suas próprias criações. 
-        A capacidade de observar em tempo real como as alterações na estampa afetam a aparência da peça de vestuário 
-        escolhida permite que os usuários experimentem diferentes variações e façam ajustes em busca do visual ideal.
-      </p>
-      <p>
-        Ao concluir as customizações, os usuários podem visualizar a estampa aplicada à peça de vestuário escolhida. 
-        A interface oferece uma visão precisa de como a estampa se encaixa na peça, permitindo que os usuários avaliem 
-        o resultado antes de finalizar. Os designs personalizados podem ser salvos para futuras referências ou edições.
-      </p>
-      <p>
-        A interface é projetada para ser amigável e convidativa, incentivando os usuários a explorar e experimentar. 
-        O feedback dos usuários é valorizado, e melhorias contínuas são implementadas com base nas opiniões para 
-        aprimorar ainda mais a experiência. A interação do usuário com a interface é centrada na criatividade, 
-        oferecendo aos usuários as ferramentas e a liberdade necessárias para criar designs de estampas de 
-        roupas verdadeiramente únicos e pessoais.
-      </p>
-    </div>
-    <div class="section" id="value">
-      <h2>Valores</h2>
-      <p>
-        A DesignWeave tem como os 4 pilares: design e estética, simplicidade, exclusividade e viabilizar a diversidade.
-      </p>
-      <ul> 
-      <li>Design e estética: Buscamos trazer a melhor experiência para design e estética às camisas, fornecendo as
-        melhores e mais variadas opções de customizações ao cliente.</li>
-      <li>Simplicidade: Processo de customização e compra da camisa simplificado, de forma a obtê-la rapidamente, sem 
-        estresse, e no conforto do lar.</li>
-      <li>Exclusividade: A possibilidade de customização entrega o ar único da camisa, tornando-a a ideia do usuário 
-        concreta e exclusiva.</li>
-      <li>Viabilizar a diversidade: A possibilidade de criatividade torna o ambiente mais diverso, favorecendo a pluralidade
-        de ideias e formas artísticas.</li>
-      </ul>
-    </div>
-    <div class="section" id="canvassection">
-      <h2> Software Project Canvas </h2>
-      <p>A construção do Software Project Canvas do projeto.</p>
-      <div style="text-align: center;">
-        <img id="canvas" src="SoftwareProjectCanvas.png" alt="Software Project Canvas" width="800" height="600">
-        <div id="canvasModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div>
+              <p class="lead text-center">
+                A DesignWeave tem como 4 pilares: design e estética, simplicidade, exclusividade e viabilização da diversidade.
+              </p>
+
+              <div class="row">
+                <div class="text-center col-sm-3 mt-5">
+                  <h5 class="text-bold mb-3">Design e estética</h5>
+                  <p>Buscamos trazer a melhor experiência para design e estética às camisas, fornecendo as
+                    melhores e mais variadas opções de customizações ao cliente.</p>
+                </div>
+
+                <div class="text-center col-sm-3 mt-5">
+                  <h5 class="text-bold mb-3">Simplicidade</h5>
+                  <p>Processo de customização e compra da camisa simplificado, de forma a obtê-la rapidamente, sem 
+                      estresse, e no conforto do lar.</p>
+                </div>
+
+                <div class="text-center col-sm-3 mt-5">
+                  <h5 class="text-bold mb-3">Exclusividade</h5>
+                  <p>Possibilidade de customização entrega o ar único da camisa, tornando-a a ideia do usuário 
+                    concreta e exclusiva.</p>
+                </div>
+
+                <div class="text-center col-sm-3 mt-5">
+                  <h5 class="text-bold mb-3">Viabilização da diversidade</h5>
+                  <p>A possibilidade de criatividade torna o ambiente mais diverso, favorecendo a pluralidade de ideias e formas artísticas.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="section" id="Planilha">
-      <h2>Planilha</h2>
-      <p>
-        Link para acesso à planilha com as tabelas de Partes Interessadas, História dos Usuários e Casos de Uso:
-         <a href="https://docs.google.com/spreadsheets/d/1x32ANsg9F5wqEy55fgnTyWJFiS_hBcxMJm5Udw63dDo/edit#gid=1191713225" target="_blank">Clique aqui para abrir a planilha</a>
-      </p>
+  </section>
+
+  <!-- Software Project Canvas -->
+  <section class="page-section bg-primary text-white mb-0">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">SOFTWARE PROJECT CANVAS</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom mb-5 divider-light">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="ms-auto">
+              <p class="lead text-center mb-5">
+                A construção do Software Project Canvas do projeto.
+              </p>
+              
+              <img id="canvas" src="SoftwareProjectCanvas.png" alt="Software Project Canvas" style="width: 100%">
+
+              <div id="canvasModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+            </div>
+        </div>
     </div>
-    <div class="section" id="parts-interested">
-      <h2>Partes interessadas</h2>
-      <div style="text-align: center;">
-        <img src="partes_interessadas.png" alt="PartesInteressadas" width="1250" height="1000">
-      </div>
-<!--       <div class="tabela">
-        <table border="1">
-          <tr>
-            <th>Nome</th>
-            <th>Poder</th>
-            <th>Legitimidade</th>
-            <th>Urgência</th>
-            <th>Dinheiro</th>
-            <th>Exclusividade</th>
-            <th>Agilidade/Conforto</th>
-          </tr>
-          <tr>
-            <td>Desenvolvedor Web</td>
-            <td>Baixo</td>
-            <td>Baixo</td>
-            <td>Baixo</td>
-            <td>Sim</td>
-            <td>Não</td>
-            <td>Não</td>
-          </tr>
-          <tr>
-            <td>Gráfica</td>
-            <td>Baixo</td>
-            <td>Médio</td>
-            <td>Médio</td>
-            <td>Sim</td>
-            <td>Não</td>
-            <td>Não</td>
-          </tr>
-          <tr>
-            <td>Designer/Usuário</td>
-            <td>Baixo</td>
-            <td>Alto</td>
-            <td>Alto</td>
-            <td>Sim</td>
-            <td>Sim</td>
-            <td>Sim</td>
-          </tr>
-          <tr>
-            <td>Cliente</td>
-            <td>Baixo</td>
-            <td>Alto</td>
-            <td>Alto</td>
-            <td>Não</td>
-            <td>Sim</td>
-            <td>Sim</td>
-          </tr>
-          <tr>
-            <td>Dono</td>
-            <td>Alto</td>
-            <td>Baixo</td>
-            <td>Baixo</td>
-            <td>Sim</td>
-            <td>Não</td>
-            <td>Não</td>
-          </tr>
-          <tr>
-            <td>Gestor</td>
-            <td>Alto</td>
-            <td>Alto</td>
-            <td>Alto</td>
-            <td>Sim</td>
-            <td>Não</td>
-            <td>Não</td>
-          </tr>
-          <tr>
-            <td>Governo</td>
-            <td>Médio</td>
-            <td>Baixo</td>
-            <td>Baixo</td>
-            <td>Sim</td>
-            <td>Não</td>
-            <td>Não</td>
-          </tr>
-        </table>
-      </div> -->
+  </section>
+
+  <!-- Planilha -->
+  <section class="page-section mb-0">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">PLANILHA</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom mb-5">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="ms-auto">
+              <p class="lead text-center">
+                Link para acesso à planilha com as tabelas de Partes Interessadas, História dos Usuários e Casos de Uso: <a href="https://docs.google.com/spreadsheets/d/1x32ANsg9F5wqEy55fgnTyWJFiS_hBcxMJm5Udw63dDo/edit#gid=1191713225" target="_blank">clique aqui.</a>
+              </p>
+            </div>
+        </div>
     </div>
-    <div class="section" id="hist_usu_section">
-      <h2> História dos Usuários </h2>
-      <div style="text-align: center;">
-        <img id="hist_usu" src="historias_usuarios.png" alt="Historias" width="1200" height="800">
+  </section>
+
+  <!-- Partes Interessadas -->
+  <section class="page-section bg-primary text-white mb-0">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">PARTES INTERESSADAS</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom mb-5 divider-light">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="ms-auto">
+              <img id="partes_img" src="partes_interessadas.png" alt="PartesInteressadas" style="width: 100%">
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Histórias do Usuário -->
+  <section class="page-section mb-0">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">HISTÓRIAS DO USUÁRIO</h2>
+
+        <!-- Icon Divider-->
+        <div class="divider-custom mb-5">
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <img id="hist_usu" src="historias_usuarios.png" alt="Historias" style="width: 100%">
         <div id="hist_usu_Modal" class="modal">
           <span class="close">&times;</span>
           <img class="modal-content" id="img02">
           <div id="caption"></div>
         </div>
+    </div>
+  </section>
+
+  <!-- Casos de Uso -->
+  <section class="page-section bg-primary text-white mb-0">
+    <div class="container">
+      <!-- About Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-white">CASOS DE USO</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom mb-5 divider-light">
+          <div class="divider-custom-line"></div>
+      </div>
+      <!-- About Section Content-->
+      <div class="text-center">
+        <p class="lead">Diagrama UML:</p>
+        <img id="casos_uso" class="mb-5" src="DiagramaUMLv2.png" alt="CasosUML" style="width: 100%; max-width: 550px">
+
+        <p class="lead">Narrativa:</p>
+        <img class="mb-5 narrativas" src="casos_uso_1.png" alt="CasosUML1" style="width: 100%; max-width: 2149px">
+        <img class="narrativas" src="casos_uso_2.png" alt="CasosUML2" style="width: 100%; max-width: 2147px">
+      </div>
+
+      <div id="narrativas_Modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img03">
+        <div id="narrativasText"></div>
       </div>
     </div>
-    <div class="section" id="casos_uso">
-      <h2> Casos de Uso </h2>
-      <p>Diagrama UML:</p>
-      <div style="text-align: center;">
-        <img src="DiagramaUMLv2.png" alt="CasosUML" width="800" height="600">
+  </section>
+
+  <!-- Quem Somos -->
+  <section id="contato" class="page-section mb-0">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase">QUEM SOMOS</h2>
+
+        <!-- Icon Divider-->
+        <div class="divider-custom mb-5">
+          <div class="divider-custom-line"></div>
+        </div>
+
+        <div class="row">
+          <div class="ms-auto">
+            <p class="lead" style="text-indent: 5%; text-align: justify">
+              Somos o grupo G da disciplina de Engenharia de Software, composto por estudantes de Engenharia Eletrônica e de Computação da Universidade Federal do Rio de Janeiro.
+            </p>
+
+            <ul> 
+              <li><b>André Pereira</b>: andre.pereira@poli.ufrj.br</li>
+              <li><b>Felipe Kuang</b>: felipekuang@poli.ufrj.br</li>
+              <li><b>Gabriel Távora</b>: gabriel.tavora@poli.ufrj.br</li>
+              <li><b>Marco Antonio Machado</b>: marcoantoniogomes@poli.ufrj.br</li>
+            </ul>
+          </div>
       </div>
-      <p>Narrativa:</p>
-      <div style="text-align: center;">
-        <img src="casos_uso_1.png" alt="CasosUML1" width="1200" height="950">
-      </div>
-      <div style="text-align: center;">
-        <img src="casos_uso_2.png" alt="CasosUML2" width="1200" height="950">
-      </div>
     </div>
-    <div class="section" id="group-members">
-      <h2>Quem Somos</h2>
-      <p>
-        Somos o grupo G da disciplina de Engenharia de Software, compostos por estudantes de Engenharia Eletrônica e de
-        Computação da Universidade Federal do Rio de Janeiro.
-      </p>
-      <ul>
-        <li>André Pereira - e-mail: andre.pereira@poli.ufrj.br</li>
-        <li>Felipe Kuang - e-mail: felipekuang@poli.ufrj.br</li>
-        <li>Gabriel Távora - e-mail: gabriel.tavora@poli.ufrj.br</li>
-        <li>Marco Antonio Machado - e-mail: marcoantoniogomes@poli.ufrj.br</li>
-      </ul>
-      <p>
-        <h4>Endereço</h4>
-        <p>
-          Centro de Tecnologia da UFRJ - 
-          Av. Athos da Silveira Ramos, 149 - Bloco H,
-          2 andar - Cidade Universitária da Universidade Federal do Rio de Janeiro, Rio de Janeiro - RJ, 21941-909
-        </p>
-      </p>
+  </section>
+
+  <!-- Footer-->
+  <footer class="footer text-center">
+    <div class="container" style="height: 100%">
+        <div class="row" style="display: flex; flex: 1; align-items: center; justify-content: center">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">ENDEREÇO</h4>
+                <p class="lead mb-0">
+                  Centro de Tecnologia da UFRJ
+                  <br />Av. Athos da Silveira Ramos, 149
+                  <br />Bloco H, 2 andar
+                  <br />Cidade Universitária da Universidade Federal do Rio de Janeiro
+                  <br />Rio de Janeiro - RJ, 21941-909
+                </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <img src="UFRJ.png" style="width: 100%; max-width: 250px" />
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-4" style="display: flex; flex: 1; align-items: center; justify-content: center">
+              <img src="delUFRJ.png" style="max-width: 323px; background-color: #FFFFFF; border-radius: 5px" />
+            </div>
+        </div>
     </div>
-    <div class="section" id="footer-images">
-      <img src="PoliUFRJ.png" alt="" title="Escola Politecnica" style="width: 305px; height: 104px;">
-        &nbsp;&nbsp;&nbsp;
-      <img src="delUFRJ.png" alt="" title="Logo Del" style="width: 302px; height: 104px;">
-    </div>
-    <div class="footer" style="height: 36px;"><a href="https://github.com/felipekuang/DesignWeave.git"  
-      style="color: white;">Repositório no GitHub</a>
-    </div>
-    <button id="backToTopBtn"><a href="#top">Back to Top</a></button>
+  </footer>
+  <!-- Copyright Section-->
+  <div class="copyright py-4 text-center text-white">
+      <div class="container"><small><a id="backToTopBtn" href="#top">Back to Top</a></small></div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="myscript.js"></script>
   </body>
 </html>

@@ -56,12 +56,6 @@ img.onclick = function(){
   captionText.innerHTML = this.alt;
 }
 
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
 modal.addEventListener("click", function(event) {
   if (event.target === modal) {
     modal.style.display = "none";
@@ -84,18 +78,34 @@ histUsuModal.addEventListener("click", function(event) {
   }
 });
 
-var narrativasModal = document.getElementById("narrativas_Modal");
-var narrativasImg = document.getElementById("narrativas");
-var narrativasModalImg = document.getElementById("img03");
-
-narrativasImg.onclick = function() {
+var casosUsoImg = document.getElementById("casos_uso");
+casosUsoImg.addEventListener("click", function () {
   narrativasModal.style.display = "block";
- narrativasModalImg.src = this.src;
-  narrativasText.innerHTML = this.alt;
-}
+  narrativasModalImg.src = casosUsoImg.src;
+  narrativasText.innerHTML = casosUsoImg.alt;
+});
+
+var narrativasModal = document.getElementById("narrativas_Modal");
+var narrativasText = document.getElementById("narrativasText");
+var narrativasModalImg = document.getElementById("img03");
+var narrativasImg = [...document.getElementsByClassName("narrativas")].forEach(element => {
+  element.onclick = function() {
+    narrativasModal.style.display = "block";
+    narrativasModalImg.src = element.src;
+    narrativasText.innerHTML = element.alt;
+  }
+});
 
 narrativasModal.addEventListener("click", function(event) {
   if (event.target === narrativasModal) {
    narrativasModal.style.display = "none";
   }
 });
+
+close = [...document.getElementsByClassName("close")].forEach(element => {
+  element.onclick = function() {
+    modal.style.display = "none";
+    narrativasModal.style.display = "none";
+  }
+}
+);
